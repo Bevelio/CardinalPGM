@@ -8,7 +8,6 @@ import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
 import org.bukkit.Location;
-import org.bukkit.Material;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.Sound;
 import org.bukkit.attribute.Attribute;
@@ -31,7 +30,7 @@ public class Players {
         player.setFoodLevel(20);
         player.setSaturation(20);
         player.getInventory().clear();
-        player.getInventory().setArmorContents(new ItemStack[]{new ItemStack(Material.AIR), new ItemStack(Material.AIR), new ItemStack(Material.AIR), new ItemStack(Material.AIR)});
+        player.getInventory().setArmorContents(new ItemStack[4]);
         for (PotionEffect effect : player.getActivePotionEffects()) {
             try {
                 player.removePotionEffect(effect.getType());
